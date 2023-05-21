@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --preto-texto: #000000;
+    --preto-bg: #303030;
+    --bg-destaque: #f9f9f9;
+    --branco-texto: #ffffff;
+    --cor-botao: #c07212;
+}
+
+/* === HEADER ===*/
+
+#header {
+    background-color: var(--preto-bg);
+    color: var(--branco-texto);
+}
+
+.header__titulo {
+    font-weight: 600;
+    font-size: 3.75rem;
+    padding: 12.875rem 0 1.25rem 3.875rem;
+}
+
+.header__texto {
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 0 0 9.313rem 3.875rem ;
+}
+
+/* === DESTAQUE ===*/
+
+#dados {
+    background-color: var(--bg-destaque);
+}
+
+#lista_de_dados {
+    list-style-type: none;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 6rem 0 4.183rem 3.875rem;
+}
+
+#lista_de_dados h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+#lista_de_dados p {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+
+/* === HISTÓRIA ===*/
+
+#historia {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#historia__texto {
+    padding: 19rem 0 0 3.875rem;
+}
+
+#historia__texto h2 {
+    color: var(--preto-texto);
+    font-weight: 500;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+#historia__texto p {
+    color: var(--preto-texto);
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+#historia__imagem {
+    padding: 5.125rem 0 5.75rem 0;
+}
+
+/* === CONTATO ===*/
+
+#formulario {
+    background-color: var(--preto-bg);
+    text-align: center;
+}
+
+#formulario__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--branco-texto);
+    padding: 5.438rem 0 2.5rem 0;
+}
+
+input {
+    width: 31.75rem;
+    height: 4.5rem;
+    border-radius: 0.625rem;
+    background-color: var(--branco-texto);
+    margin: 1rem;
+    border: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--preto-texto);
+    padding-left: 0.625rem;
+}
+
+button {
+    background-color: var(--cor-botao);
+    color: var(--branco-texto);
+    width: 17.875rem;
+    height: 4.625rem;
+    border: 0px;
+    border-radius: 0.625rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.875rem;
+    margin: 3rem;
+}
+
+button:hover {
+    background-color: var(--cor-botao);
+    transform: translateY(-0.313rem);
+    transition-duration: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 15px 20px 0 #414040;
+}
